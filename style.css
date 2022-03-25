@@ -1,0 +1,152 @@
+html,
+body,
+.container,
+p {
+  max-height: 100vh;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.sidebar {
+  max-height: 100vh;
+  grid-column: 1 / 2;
+  background-color: blue;
+  display: grid;
+  grid-template-rows: 1fr 3fr 5fr;
+}
+
+.logo {
+  grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 60px;
+}
+
+.navigation {
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: repeat(6, 60px);
+}
+
+.branding {
+  grid-row: 3 / 4;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: repeat(3, 60px);
+}
+
+.main {
+  max-height: 100vh;
+  grid-column: 2 / 3;
+  background-color: grey;
+  display: grid;
+  grid-template-rows: 25% 75%;
+}
+
+.header {
+  grid-row: 1/2;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.header-top-left {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  height: 50%;
+}
+
+input {
+  height: 50%;
+  width: 80%;
+  position: relative;
+  top: 25%;
+  left: 15%;
+}
+
+.header-top-right {
+  display: grid;
+  grid-template-columns: 2fr 1fr 3fr;
+  height: 50%;
+}
+
+.header-bottom-left {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  height: 50%;
+}
+
+.header-bottom-right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 50%;
+}
+
+.content {
+  grid-row: 2/3;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 7fr 2fr;
+}
+
+.projects {
+  grid-column: 1 / 2;
+  max-height: 100%;
+  max-width: 100%;
+  background-color: aqua;
+  display: grid;
+  grid-template-rows: 10% 90%;
+}
+
+.projects-title {
+  grid-row: 1 / 2;
+}
+
+.projects-container {
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.project-box {
+  border: 1px solid magenta;
+}
+
+.info {
+  grid-column: 2 / 3;
+  height: 100%;
+  width: 100%;
+  background-color: blueviolet;
+  display: grid;
+  grid-template-rows: 10% 40% 10% 40%;
+}
+
+.announcements-title {
+  grid-row: 1 / 2;
+  border: 1px solid blue;
+}
+
+.announcements-box {
+  grid-row: 2 / 3;
+  border: 1px solid blue;
+}
+
+.trending-title {
+  grid-row: 3 / 4;
+  border: 1px solid blue;
+}
+
+.trending-box {
+  grid-row: 4 / 5;
+  border: 1px solid blue;
+}
