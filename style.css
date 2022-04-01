@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
 html,
 body,
@@ -41,6 +41,8 @@ p {
 
 .logo > p {
   justify-self: start;
+  font-weight: 700;
+  font-size: larger;
 }
 
 .navigation {
@@ -55,6 +57,7 @@ p {
 
 .navigation > p {
   justify-self: start;
+  font-weight: 700;
 }
 
 .branding {
@@ -68,10 +71,7 @@ p {
 
 .branding > p {
   justify-self: start;
-}
-
-.sidebar > p {
-  font-weight: bolder;
+  font-weight: 700;
 }
 
 .main {
@@ -92,6 +92,10 @@ p {
   align-items: center;
 }
 
+.header > svg {
+  color: gray;
+}
+
 .header-top-left {
   display: grid;
   grid-template-columns: 1fr 9fr;
@@ -102,7 +106,9 @@ p {
 
 input {
   height: 20px;
-  width: 400px;
+  width: 600px;
+  border-radius: 10px;
+  border: 2px solid gray;
   justify-self: start;
 }
 
@@ -118,6 +124,8 @@ input {
   height: 100%;
   justify-items: center;
   align-items: center;
+  font-weight: 700;
+  padding: 10px;
 }
 
 #profile-pic-small {
@@ -171,6 +179,8 @@ input {
   height: 100%;
   justify-items: center;
   align-items: center;
+
+  justify-content: space-between;
 }
 
 button {
@@ -179,6 +189,9 @@ button {
   border-radius: 15px;
   background-color: #0f766e;
   border-style: none;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
 }
 
 .content {
